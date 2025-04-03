@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "NotoSans";
+    height: 900px;
+}
+
+.container {
+    width: 1110px;
+    height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    border-bottom: 1px solid #E4E9F2;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.nav-logo {
+    font-size: 28px;
+    color: #1D2026;
+    font-weight: 900;
+}
+
+.nav-link {
+    color: #69707D;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 26px;
+}
+
+.user-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.user-profile:hover{
+    border: 2px solid orange;
+}
+.user-section {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    width: 100%;
+    padding-bottom: 43px;
+}
+
+.nav-link:hover {
+    border-bottom: 4px solid #FF7E1B;
+}
+
+.user-savings:hover {
+    cursor: pointer;
+}
+
+.main {
+    width: 1000px;
+    height: 100vh;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}
+
+#img1-carusel{
+    width: 88px;
+    height: 88px;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+.moreimages:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.moreimages:active{
+    border: 2px solid orangered;
+}
+
+.more-product__ads {
+    display: flex;
+    column-gap: 30px;
+    padding-top: 30px;
+}
+
+.main-ads__image:hover{
+    cursor: pointer;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    padding-top: 50px;
+}
+
+.image-container img {
+    display: block;
+}
+
+
+.image-container:hover .overlay {
+    background: rgba(255, 223, 211, 0.5);
+    /* Hover bo‘lganda rang paydo bo‘ladi */
+}
+
+.image-container {
+    display: flex;
+    column-gap: 30px;
+}
+
+.image-ads__companyname {
+    color: #FF7E1B;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.image-ads__companyheadline {
+    width: 445px;
+    color: #1D2026;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+    padding-bottom: 20px;
+}
+
+.image-ads__companydesc {
+    width: 445px;
+    color: #69707D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+
+.prse {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.image-ads__itemprice {
+    color: #1D2026;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.image-ads__skitka {
+    width: 35px;
+    height: 16px;
+    color: #FF7E1B;
+    font-family: "Kumbh Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FF7E1B;
+}
+
+.image-ads__realprice {
+    color: #B6BCC8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-decoration: line-through;
+}
+
+.price-counter {
+    display: flex;
+}
+
+.korzina {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 360px;
+    height: 256px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.50);
+    z-index: 9999;
+    display: none;
+}
+
+
+.korzina-title{
+    color: #1D2026;
+    font-family: "Kumbh Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+.korxina-line{
+    background: #E4E9F2;
+    margin-top: 27px;
+}
+
+.korzina-text{
+    color: #69707D;
+    text-align: center;
+    font-family: "Kumbh Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    margin-left: 109px;
+    position: absolute;
+    top: 145px;
+}
+
+
+.price-counter {
+    width: 100px;
+    height: 40px;
+    background-color: #F6F8FD;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.image-ads__btn {
+    padding-top: px;
+    padding-left: 5px;
+    font-size: 32px;
+    color: #FF7E1B;
+}
+
+.image-ads__btnplus {
+    padding-left: 15px;
+    font-size: 36px;
+    color: #FF7E1B;
+}
+
+.image-ads__count {
+    padding-left: 20px;
+    padding-top: 5px;
+    color: #1D2026;
+    text-align: center;
+    font-family: "Kumbh Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.image-ads__button {
+    display: block;
+    width: 272px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FF7E1B;
+    text-align: center;
+    color: white;
+    padding-top: 18px;
+}
+.image-ads__button{
+    transition: .5s;
+}
+.image-ads__button:hover{
+    background-color: #FFAB6A;
+
+}
+.image-ads__headline{
+    padding-left: 100px;
+}
+.all-buttons{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding-top: 20px;
+}
+
+.price-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F8FD;
+    border-radius: 8px;
+    width: 120px;
+    height: 40px;
+    padding: 5px;
+}
+
+.image-ads__btn, .image-ads__btnplus {
+    border: none;
+    background: none;
+    font-size: 24px;
+    color: #FF7E1B;
+    cursor: pointer;
+}
+
+.image-ads__count {
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.user-savings {
+    position: relative;
+    display: inline-block;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    width: 360px;
+    height: 256px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 50px;
+    left: 0;
+}
+
+.user-savings:hover .modal {
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
